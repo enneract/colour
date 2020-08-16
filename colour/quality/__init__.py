@@ -9,6 +9,7 @@ from colour.utilities.documentation import is_documentation_building
 
 from .datasets import *  # noqa
 from . import datasets
+from .cfi2017 import CFI2017_Specification, colour_fidelity_index_CFI2017
 from .cri import CRI_Specification, colour_rendering_index
 from .cqs import (CQS_Specification, COLOUR_QUALITY_SCALE_METHODS,
                   colour_quality_scale)
@@ -16,10 +17,12 @@ from .ssi import spectral_similarity_index
 
 __all__ = []
 __all__ += datasets.__all__
+__all__ += ['CFI2017_Specification', 'colour_fidelity_index_CFI2017']
 __all__ += ['CRI_Specification', 'colour_rendering_index']
 __all__ += [
     'CQS_Specification', 'COLOUR_QUALITY_SCALE_METHODS', 'colour_quality_scale'
 ]
+
 __all__ += ['spectral_similarity_index']
 
 
